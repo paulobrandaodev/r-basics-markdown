@@ -1,0 +1,51 @@
+---
+title: "RMakdown - 01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cars
+
+```{r cars}
+data.frame(cars)
+```
+
+## 5 Primeiras Linhas
+```{r first}
+linhas = data.frame(cars)
+head(linhas, 5)
+```
+
+## 5 Ultimas Linhas
+```{r last}
+linhas = data.frame(cars)
+tail(linhas, n = 5)
+```
+
+
+## Resumo
+```{r sumary}
+summary(cars)
+```
+## Plot
+```{r plot}
+plot.default(cars)
+```
+
+## Plot
+
+> Comando *data.frame(tabela)* mostra toda a tabela
+
+> Comando *head(data.frame(tabela), 5)* mostra as 5 primeiras linhas
+
+> Comando *tail(data.frame(tabela), n = 5)* mostra as 5 últimas linhas
+
+> Comando *sumary(tabela)* mostra um resumo da tabela
+
+> Comando *plot.default(cars)* gera um grafico da tabela
+
+
+
